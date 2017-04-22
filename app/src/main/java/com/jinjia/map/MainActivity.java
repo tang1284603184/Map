@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         startLocation = (Button) findViewById(R.id.btn);
 
         Log.e("0","0");
+        Log.e("00","00");
     }
 
 //    @Override

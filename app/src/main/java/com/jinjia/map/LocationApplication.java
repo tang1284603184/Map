@@ -4,6 +4,7 @@ import com.baidu.mapapi.SDKInitializer;
 import android.app.Application;
 import android.app.Service;
 import android.os.Vibrator;
+import android.util.Log;
 
 /**
  * 主Application，所有百度定位SDK的接口说明请参考线上文档：http://developer.baidu.com/map/loc_refer/index.html
@@ -25,5 +26,7 @@ public class LocationApplication extends Application {
         locationService = new LocationService(getApplicationContext());
         mVibrator =(Vibrator)getApplicationContext().getSystemService(Service.VIBRATOR_SERVICE);
         SDKInitializer.initialize(getApplicationContext());
+
+        Log.e("0","0");
     }
 }
